@@ -270,7 +270,7 @@ ngx_http_push_stream_msg_t *
 ngx_http_push_stream_convert_char_to_msg_on_shared(ngx_http_push_stream_main_conf_t *mcf, u_char *data, size_t len, ngx_http_push_stream_channel_t *channel, ngx_int_t id, ngx_str_t *event_id, ngx_str_t *event_type, time_t time, ngx_int_t tag, ngx_pool_t *temp_pool)
 {
     ngx_slab_pool_t                           *shpool = mcf->shpool;
-    ngx_http_push_stream_shm_data_t           *shm_data = mcf->shm_data;
+    //ngx_http_push_stream_shm_data_t           *shm_data = mcf->shm_data;
     ngx_queue_t                               *q;
     ngx_http_push_stream_msg_t                *msg;
     int                                        i = 0;
